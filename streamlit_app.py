@@ -9,7 +9,7 @@ exit_logo = "exit-flag_med_invert_sq-1-scaled.png"
 st.set_page_config(page_title="EXIT Bot", page_icon=favicon, layout="wide", initial_sidebar_state="auto", menu_items=None)
 
 # Exit Logo
-left_co, cent_co,last_co = st.columns(3)
+left_co, cent_co, last_co = st.columns(3)
 with cent_co:
     st.image(exit_logo)
 
@@ -88,6 +88,9 @@ st.title("Member Search App")
 
 st.divider()
 
+# Initialize collection outside the filter conditional statements
+st.session_state.exit_df, st.session_state.collection = ingest()
+
 # Radio buttons for selecting search option
 result_type = st.radio(
     "Select Search Option:",
@@ -103,7 +106,6 @@ filter_by_location = st.checkbox("Filter by Location")
 
 # Dropdown for selecting location if filter is enabled
 if filter_by_location:
-    st.session_state.exit_df, st.session_state.collection = ingest()
     locations = st.sidebar.selectbox("Select Location", sorted(st.session_state.exit_df[' Location '].unique()))
 
 # Checkbox for family status filter
@@ -111,7 +113,6 @@ filter_by_family_status = st.checkbox("Filter by Family Status")
 
 # Dropdown for selecting family status if filter is enabled
 if filter_by_family_status:
-    st.session_state.exit_df, st.session_state.collection = ingest()
     family_statuses = st.sidebar.selectbox("Select Family Status", sorted(st.session_state.exit_df[' Family Status '].unique()))
 
 # Checkbox for expertise filter
@@ -119,7 +120,6 @@ filter_by_expertise = st.checkbox("Filter by Expertise")
 
 # Dropdown for selecting expertise if filter is enabled
 if filter_by_expertise:
-    st.session_state.exit_df, st.session_state.collection = ingest()
     expertises = st.sidebar.selectbox("Select Expertise", sorted(st.session_state.exit_df[' Expertise '].unique()))
 
 # Search button
