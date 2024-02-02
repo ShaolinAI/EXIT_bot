@@ -1,4 +1,18 @@
-# EXIT_bot - Networking Tool using AI
+<h1 align="center">
+	<img src="https://github.com/ShaolinAI/EXIT_bot/blob/main/App/exit-flag_med_invert_sq-1-scaled.png?raw=true" alt="EXIT_bot - Networking Tool using AI">
+</h1>
+<h1 align="center">
+
+<h1 align="center">
+	<b>EXIT Bot</b>
+<br>
+</h1>
+<h2 align="center">
+    <em>Networking Tool using AI</em>
+</h2>
+<br>
+<br>
+<br>
 
 EXIT_bot is a powerful networking tool developed by the EXIT Men's Networking Group to enhance networking capabilities through the use of AI. The tool primarily consists of an IPython notebook script (`EXIT_bot.ipynb`) that creates a ChromaDB collection of user details. The collection can be queried using plain text, providing a seamless and efficient way to search for users based on various criteria.
 
