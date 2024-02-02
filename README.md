@@ -2,8 +2,6 @@
 	<img src="https://github.com/ShaolinAI/EXIT_bot/blob/main/App/exit-flag_med_invert_sq-1-scaled.png?raw=true" alt="EXIT_bot - Networking Tool using AI">
 </h1>
 <h1 align="center">
-
-<h1 align="center">
 	<b>EXIT Bot</b>
 <br>
 </h1>
